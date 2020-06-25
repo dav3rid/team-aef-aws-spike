@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { WebSocketProvider } from './contexts/WebSocketContext';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <WebSocketProvider>
     <App />
-  </React.StrictMode>,
+  </WebSocketProvider>,
   document.getElementById('root')
 );
 
